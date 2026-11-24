@@ -65,7 +65,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-24 py-20 sm:py-24">
+    <section id="contact" className="scroll-mt-28 py-20 sm:py-24">
       <Container>
         <SectionHeading
           eyebrow="Contact"

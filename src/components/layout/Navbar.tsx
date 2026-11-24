@@ -1,13 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { navLinks } from "@/data/navigation";
-import { profile } from "@/data/profile";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const workLinks = [
@@ -76,15 +75,10 @@ export function Navbar() {
       )}
     >
       <nav
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-6 lg:px-8"
+        className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-6 lg:px-8"
         aria-label="Primary"
       >
-        <Link
-          href="/#home"
-          className="font-display text-sm font-semibold tracking-tight text-foreground transition-colors hover:text-accent"
-        >
-          {profile.name}
-        </Link>
+        <Logo priority className="h-14 sm:h-[4.25rem]" />
 
         <ul className="hidden items-center gap-0.5 lg:flex">
           {primaryLinks.map((link) => (

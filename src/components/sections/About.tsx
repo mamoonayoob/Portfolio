@@ -10,7 +10,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-24 py-20 sm:py-24"
+      className="scroll-mt-28 py-20 sm:py-24"
       aria-labelledby="about-heading"
     >
       <Container>

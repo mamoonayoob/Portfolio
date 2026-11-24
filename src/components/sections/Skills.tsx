@@ -24,7 +24,7 @@ const icons = {
 
 export function Skills() {
   return (
-    <section id="skills" className="scroll-mt-24 py-20 sm:py-24">
+    <section id="skills" className="scroll-mt-28 py-20 sm:py-24">
       <Container>
         <Reveal>
           <SectionHeading

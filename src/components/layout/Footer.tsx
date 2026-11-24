@@ -2,6 +2,7 @@ import Link from "next/link";
 import { profile } from "@/data/profile";
 import { activeSocials } from "@/data/socials";
 import { Container } from "@/components/ui/Container";
+import { Logo } from "@/components/ui/Logo";
 
 const footerNav = [
   { href: "/#about", label: "About" },
@@ -24,10 +25,8 @@ export function Footer() {
       <Container className="py-10">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-display text-sm font-semibold text-foreground">
-              {profile.name}
-            </p>
-            <p className="mt-2 text-sm text-muted">
+            <Logo plate className="h-16 rounded-md sm:h-[4.5rem]" />
+            <p className="mt-3 text-sm text-muted">
               Full Stack / MERN Developer in {profile.location}. Building
               logistics portals, WMS, and HRMS product surfaces.
             </p>

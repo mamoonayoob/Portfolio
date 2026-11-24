@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24"
+      className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-24"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="orb-float orb-pulse absolute top-[-12%] left-1/2 h-[480px] w-[780px] -translate-x-1/2 rounded-full bg-accent/20 blur-[130px]" />

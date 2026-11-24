@@ -7,7 +7,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function Experience() {
   return (
-    <section id="experience" className="scroll-mt-24 py-20 sm:py-24">
+    <section id="experience" className="scroll-mt-28 py-20 sm:py-24">
       <Container>
         <Reveal>
           <SectionHeading

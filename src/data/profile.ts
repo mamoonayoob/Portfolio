@@ -23,6 +23,10 @@ export const profile = {
   },
   /** Personal portrait */
   portraitSrc: "/images/personal.JPG",
+  /** Brand logo (transparent wordmark) + plate + monogram */
+  logoSrc: "/images/logo-transparent.png",
+  logoPlateSrc: "/images/logo.png",
+  logoMarkSrc: "/images/logo-mark.png",
   resumeSrc: "/Mamoon-Ayoob-CV.pdf",
   headline:
     "Full Stack / MERN engineer building courier logistics portals, WMS workflows, and HRMS product surfaces — across Tranzo and Ordinify.",

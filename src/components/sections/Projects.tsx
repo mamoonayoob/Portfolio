@@ -152,7 +152,7 @@ function ProjectCard({
 
 export function Projects() {
   return (
-    <section id="projects" className="scroll-mt-24 py-20 sm:py-24">
+    <section id="projects" className="scroll-mt-28 py-20 sm:py-24">
       <Container>
         <Reveal>
           <SectionHeading

@@ -13,7 +13,7 @@ const icons = {
 
 export function OrdinifySpotlight() {
   return (
-    <section id="ordinify" className="scroll-mt-24 py-20 sm:py-24">
+    <section id="ordinify" className="scroll-mt-28 py-20 sm:py-24">
       <Container>
         <Reveal>
           <SectionHeading
