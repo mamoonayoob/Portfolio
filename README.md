@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mamoon Ayoob — Personal Portfolio
 
-## Getting Started
+Premium personal portfolio for **Mamoon Ayoob**, Associate Software Engineer at Tranzo Pvt. Ltd. and part-time Full Stack Developer at Virtual Dive Studios (Ordinify).
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- Framer Motion + Lucide React
+- next-themes (dark/light)
+- Vercel Analytics + Speed Insights
+- Formspree-ready contact API
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.example` to `.env.local`:
 
-## Learn More
+- `NEXT_PUBLIC_SITE_URL` — production URL for sitemap/metadata
+- `FORMSPREE_FORM_ID` — optional Formspree form id for contact
+- `CONTACT_TO_EMAIL` — mailto fallback recipient
 
-To learn more about Next.js, take a look at the following resources:
+## Content editing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All copy lives in centralized data files under `src/data/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| File | Purpose |
+|------|---------|
+| `profile.ts` | Name, role, summary, portrait, resume path |
+| `experience.ts` | Work history |
+| `skills.ts` | Skill categories |
+| `projects.ts` | Featured + professional projects |
+| `ordinify.ts` / `tranzo.ts` | Product spotlight + case studies |
+| `socials.ts` | LinkedIn / GitHub |
+| `navigation.ts` | Nav anchors |
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npx vercel login
+npx vercel
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Then attach a custom domain in the Vercel project settings.
+
+## Folder structure
+
+```
+src/
+  app/                 # routes, SEO, OG, sitemap, API
+  components/          # layout, sections, ui, work
+  data/                # editable content
+  lib/                 # utilities + motion
+public/
+  images/              # portrait + project covers
+  Mamoon-Ayoob-CV.pdf  # downloadable resume
+```
+# Portfolio
